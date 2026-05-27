@@ -4,6 +4,25 @@ It is yet another bootloader for the STM8 platform that implements IAP principle
 the "toy" bootloader category, it can still serve as a solid reference point for education. This project emphasizes
 simplicity over optimizing for size and efficiency.
 
+## Supported commands
+
+Commands can be run with the verbosity enabled, for example `make V=1 ...`. By default, the verbosity setting is disabled.
+If you are running make in a non-Linux environment, you should use `make WINE= ...`.
+
+| Command | Description |
+| --- | --- |
+| make all | Initializes directories and builds the final image |
+| make init | Creates the necessary directories |
+| make clean | Purges all compiled object files, binaries, and build artifacts |
+| make size | Displays the final flash memory footprint of the image |
+| make inspect | Inspects the compiled executable structure |
+| make flash | Flashes the image onto the target MCU |
+| make flash-read | Reads the entire flash memory layout from the MCU |
+| make opt-read | Reads the option bytes from the MCU |
+| make opt-ubc | Establishes a 10-page IAP write-protected UBC area |
+| make opt-reset | Resets the option bytes back to factory default values |
+| make eeprom-read | Reads the onboard EEPROM data from the MCU |
+
 ## References
 
 [AN2659](https://www.st.com/en/embedded-software/stsw-stm8006.html) - STMicroelectronics application note. At its core,
