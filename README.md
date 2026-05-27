@@ -6,8 +6,8 @@ simplicity over optimizing for size and efficiency.
 
 ## Supported commands
 
-Commands can be run with the verbosity enabled, for example `make V=1 ...`. By default, the verbosity setting is disabled.
-If you are running make in a non-Linux environment, you should use `make WINE= ...`.
+Commands can be run with the verbosity enabled, for example `make V=1 ...`. By default, the verbosity is disabled. If you
+are running make in a non-Linux environment, you should use `make WINE= ...`.
 
 | Command | Description |
 | --- | --- |
