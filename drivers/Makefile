@@ -2,9 +2,8 @@
 #
 # SPDX-License-Identifier: MIT
 
-DRV_CUR_DIR := ./drivers
-FLASH_DIR   := $(DRV_CUR_DIR)/flash
-SERIAL_DIR  := $(DRV_CUR_DIR)/serial
+FLASH_DIR  := $(DRIVERS_DIR)/flash
+SERIAL_DIR := $(DRIVERS_DIR)/serial
 
 SRCS_C += \
 	$(SERIAL_DIR)/uart_stm8.c \

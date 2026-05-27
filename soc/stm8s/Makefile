@@ -2,13 +2,11 @@
 #
 # SPDX-License-Identifier: MIT
 
-SOC_CUR_DIR  := ./soc/stm8s
-ABSTRACT_DIR := $(SOC_CUR_DIR)/abstract
-
 SRCS_C += \
-	$(SOC_CUR_DIR)/soc.c \
-	$(SOC_CUR_DIR)/vector.c
+	$(SOC_FAMILY_DIR)/soc.c \
+	$(SOC_FAMILY_DIR)/vector.c
 
-SRCS_S += $(SOC_CUR_DIR)/crt0.s
+LDSCRIPT += $(SOC_FAMILY_DIR)/soc.lkf
 
-LDSCRIPT += $(SOC_CUR_DIR)/soc.lkf
+HEX_OPT_UBC   += '0x00 0x09 0xF6 0x00 0xFF 0x00 0xFF 0x00 0xFF 0x00 0xFF'
+HEX_OPT_RESET += '0x00 0x00 0xFF 0x00 0xFF 0x00 0xFF 0x00 0xFF 0x00 0xFF'
