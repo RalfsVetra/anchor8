@@ -22,6 +22,7 @@
 
 /*
  * Defines the start of the user flash area.
+ * 0x0400 is 1kB
  */
 #define CONF_USER_RESET_ADDR 0x8400
 
