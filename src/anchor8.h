@@ -12,7 +12,7 @@
 
 typedef void (*JPF)(void);
 
-#define USER_RESET_ADDR ((uint8_t FAR *)CONF_USER_RESET_ADDR)
+#define USER_RESET_ADDR ((uint8_t *)CONF_USER_RESET_ADDR)
 
 /*
  * 0x82 and 0xAC are op-codes for
