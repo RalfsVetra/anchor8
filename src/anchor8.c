@@ -4,15 +4,19 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "anchor8.h"
-
 #include <soc.h>
 #include <config.h>
 #include <anchor8/drivers/gpio.h>
 #include <anchor8/drivers/uart.h>
 #include <anchor8/drivers/flash.h>
 
-#include "protocol.h"
+#include "proto.h"
+
+#define OP_INT 0x82
+#define OP_JPF 0xAC
+#define USER_RESET_ADDR ((uint8_t *)CONF_USER_RESET_ADDR)
+
+typedef void (*JPF)(void);
 
 int _fctcpy(char name);
 static void jump_to_app(void);

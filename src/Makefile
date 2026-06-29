@@ -4,4 +4,4 @@
 
 SRCS_C += \
 	$(SRC_DIR)/anchor8.c \
-	$(SRC_DIR)/protocol.c
+	$(SRC_DIR)/proto.c
