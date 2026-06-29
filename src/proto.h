@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-#ifndef PROTOCOL_H
-#define PROTOCOL_H
+#ifndef PROTO_H
+#define PROTO_H
 
 #include <soc.h>
 
 uint8_t proto_receive(void);
 void proto_process(uint8_t cmd);
 
-#endif /* PROTOCOL_H */
+#endif /* PROTO_H */

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "protocol.h"
+#include "proto.h"
 
 #include <soc.h>
 #include <config.h>
